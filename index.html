@@ -41,7 +41,7 @@ html, body { height: 100%; margin: 0; }
 .section-divider { width: 60px; height: 4px; background: #D62828; border-radius: 2px; }
 .mobile-menu { display: none; }
 .mobile-menu.open { display: flex; }
-.link-button { display: inline-block; background: #D62828; color: white; padding: 10px 16px; border-radius: 8px; text-decoration: none; font-size: 14px; font-weight: 600; margin: 6px; transition: background 0.3s, transform 0.2s; }
+.link-button { display: inline-block; background: #D62828; color: white; padding: 10px 16px; border-radius: 8px; text-decoration: none; font-size: 14px; font-weight: 600; margin: 6px; transition: [...]
 .link-button:hover { background: #a01e1e; }
 .hamburger { display: flex; flex-direction: column; gap: 5px; cursor: pointer; }
 .hamburger span { width: 24px; height: 3px; background: #222222; border-radius: 2px; transition: 0.3s; }
@@ -64,28 +64,28 @@ html, body { height: 100%; margin: 0; }
   <div id="app" class="h-full w-full overflow-auto"><!-- NAVBAR -->
    <nav class="sticky top-0 z-50 bg-white shadow-sm border-b border-gray-100">
     <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-     <div class="flex items-center gap-2 cursor-pointer" onclick="navigateTo('home')"><span class="text-2xl">🇯🇵</span> <span id="nav-title" class="font-heading font-bold text-lg text-japan-dark">Descobrir o Japão</span>
+     <div class="flex items-center gap-2 cursor-pointer" onclick="navigateTo('home')"><span class="text-2xl">🇯🇵</span> <span id="nav-title" class="font-heading font-bold text-lg text-japan-d[...]
      </div>
-     <div class="desktop-nav flex gap-6 text-sm font-medium text-japan-dark"><span class="nav-link active" data-page="home" onclick="navigateTo('home')">Início</span> <span class="nav-link" data-page="cities" onclick="navigateTo('cities')">Cidades</span> <span class="nav-link" data-page="food" onclick="navigateTo('food')">Gastronomia</span> <span class="nav-link" data-page="culture" onclick="navigateTo('culture')">Cultura</span> <span class="nav-link" data-page="technologies" onclick="navigateTo('technologies')">Tecnologias</span> <span class="nav-link" data-page="conclusion" onclick="navigateTo('conclusion')">Conclusão</span>
-     </div><button class="mobile-toggle flex items-center justify-center w-12 h-12 rounded-lg hover:bg-gray-100" onclick="toggleMobileMenu()" aria-label="Menu"> <div class="hamburger" id="hamburger-menu"><span></span><span></span><span></span></div>
+     <div class="desktop-nav flex gap-6 text-sm font-medium text-japan-dark"><span class="nav-link active" data-page="home" onclick="navigateTo('home')">Início</span> <span class="nav-link" data-[...]
+     </div><button class="mobile-toggle flex items-center justify-center w-12 h-12 rounded-lg hover:bg-gray-100" onclick="toggleMobileMenu()" aria-label="Menu"> <div class="hamburger" id="hamburge[...]
      </button>
     </div>
-    <div id="mobile-menu" class="mobile-menu flex-col bg-white border-t border-gray-100 px-4 py-3 gap-3 text-sm font-medium"><span class="nav-link py-2" data-page="home" onclick="navigateTo('home')">Início</span> <span class="nav-link py-2" data-page="cities" onclick="navigateTo('cities')">Cidades</span> <span class="nav-link py-2" data-page="food" onclick="navigateTo('food')">Gastronomia</span> <span class="nav-link py-2" data-page="culture" onclick="navigateTo('culture')">Cultura</span> <span class="nav-link py-2" data-page="technologies" onclick="navigateTo('technologies')">Tecnologias</span> <span class="nav-link py-2" data-page="conclusion" onclick="navigateTo('conclusion')">Conclusão</span>
+    <div id="mobile-menu" class="mobile-menu flex-col bg-white border-t border-gray-100 px-4 py-3 gap-3 text-sm font-medium"><span class="nav-link py-2" data-page="home" onclick="navigateTo('home'[...]
     </div>
    </nav><!-- PAGE 1: HOME -->
    <div id="page-home" class="page active fade-in"><!-- Hero -->
     <div class="hero-gradient text-white py-20 px-4 text-center relative overflow-hidden">
-     <div class="absolute inset-0 opacity-10" style="background-image: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 80 80%22><circle cx=%2240%22 cy=%2240%22 r=%2220%22 fill=%22white%22/></svg>'); background-size: 80px 80px;"></div>
+     <div class="absolute inset-0 opacity-10" style="background-image: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 80 80%22><circle cx=%2240%22 cy=%2240%22 r[...]
      <div class="relative max-w-3xl mx-auto">
       <div class="text-6xl mb-4">⛩️</div>
       <h1 id="hero-title" class="font-heading font-900 text-4xl md:text-5xl mb-3">Descobrir o Japão</h1>
-      <p class="font-body text-lg md:text-xl opacity-90 mb-8">Uma viagem pela cultura, gastronomia e cidades japonesas.</p><button onclick="navigateTo('cities')" class="bg-white text-japan-red font-heading font-bold py-3 px-8 rounded-full hover:shadow-lg transition">Explorar</button>
+      <p class="font-body text-lg md:text-xl opacity-90 mb-8">Uma viagem pela cultura, gastronomia e cidades japonesas.</p><button onclick="navigateTo('cities')" class="bg-white text-japan-red fon[...]
      </div>
     </div><!-- Intro -->
     <div class="max-w-6xl mx-auto px-4 py-16">
      <div class="max-w-3xl mx-auto text-center mb-12">
       <div class="section-divider mx-auto mb-6"></div>
-      <p class="text-lg leading-relaxed text-gray-700">O Japão é um dos países mais fascinantes do mundo. Conhecido pela mistura entre tradição e tecnologia, este país oferece paisagens incríveis, uma gastronomia única e uma cultura profunda.</p>
+      <p class="text-lg leading-relaxed text-gray-700">O Japão é um dos países mais fascinantes do mundo. Conhecido pela mistura entre tradição e tecnologia, este país oferece paisagens incr[...]
      </div><!-- Image cards -->
      <div class="grid md:grid-cols-3 gap-6">
       <div class="card-hover rounded-2xl overflow-hidden shadow-md bg-white">
@@ -134,7 +134,7 @@ html, body { height: 100%; margin: 0; }
       </div>
       <div class="p-8 md:w-3/5"><span class="inline-block bg-japan-red text-white text-xs font-semibold px-3 py-1 rounded-full mb-3">Capital</span>
        <h2 class="font-heading font-bold text-2xl mb-3">Tóquio</h2>
-       <p class="text-gray-600 leading-relaxed">Tóquio é a capital do Japão e uma das cidades mais modernas do mundo. É conhecida pelos seus edifícios altos, tecnologia avançada e vida noturna vibrante. A cidade oferece uma mistura fascinante de tradição e modernidade.</p>
+       <p class="text-gray-600 leading-relaxed">Tóquio é a capital do Japão e uma das cidades mais modernas do mundo. É conhecida pelos seus edifícios altos, tecnologia avançada e vida notu[...]
       </div>
      </div><!-- Kyoto -->
      <div class="bg-white rounded-2xl shadow-md overflow-hidden md:flex md:flex-row-reverse card-hover">
@@ -167,8 +167,8 @@ html, body { height: 100%; margin: 0; }
     <div class="hero-gradient text-white py-16 px-4 text-center">
      <div class="text-5xl mb-3">🍱</div>
      <h1 class="font-heading font-800 text-3xl md:text-4xl mb-2">Gastronomia Japonesa</h1>
-     <p class="opacity-90">A gastronomia japonesa de Osaka é famosa por sua autenticidade e variedade, sendo considerada uma das mais ricas do Japão. Nas ruas movimentadas da cidade, é possível encontrar desde street food até restaurantes sofisticados.</p>
-    </div>
+     <p class="opacity-90">A gastronomia japonesa de Osaka é famosa por sua autenticidade e variedade, sendo considerada uma das mais ricas do Japão. Nas ruas movimentadas da cidade, é possív[...]
+     </div>
     <div class="max-w-6xl mx-auto px-4 py-12">
      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
       <div class="bg-white rounded-2xl shadow-md overflow-hidden card-hover text-center">
@@ -203,7 +203,8 @@ html, body { height: 100%; margin: 0; }
      <div class="max-w-3xl mx-auto text-center">
       <div class="section-divider mx-auto mb-6"></div>
       <h2 class="font-heading font-bold text-2xl mb-6">Vídeo: Comida Japonesa</h2>
-      <div class="rounded-2xl overflow-hidden shadow-lg" style="position:relative;padding-bottom:56.25%;height:0;"><iframe src="https://www.youtube.com/embed/1OzSXqut4n4" title="Comida Japonesa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe></div>
+      <div class="rounded-2xl overflow-hidden shadow-lg" style="position:relative;padding-bottom:56.25%;height:0;"><iframe src="https://www.youtube.com/embed/1OzSXqut4n4" title="Comida Japonesa" [...]
+      </div>
      </div>
     </div>
    </div><!-- PAGE 4: CULTURE -->
@@ -221,7 +222,7 @@ html, body { height: 100%; margin: 0; }
       </div>
       <div class="p-8 text-center">
        <h2 class="font-heading font-bold text-2xl mb-3">Monte Fuji</h2>
-       <p class="text-gray-600 max-w-2xl mx-auto">O Monte Fuji é a montanha mais alta do Japão, com 3.776 metros. Fica perto de Tóquio e é um símbolo do país. É um vulcão ativo, mas está adormecido. É sagrado e aparece em muitas obras de arte japonesa. A montanha tem forma cônica, fica coberta de neve no inverno e é admirada por turistas e japoneses, especialmente ao amanhecer.</p>
+       <p class="text-gray-600 max-w-2xl mx-auto">O Monte Fuji é a montanha mais alta do Japão, com 3.776 metros. Fica perto de Tóquio e é um símbolo do país. É um vulcão ativo, mas está[...]
       </div>
      </div>
      <!-- Templos Japoneses -->
@@ -231,7 +232,7 @@ html, body { height: 100%; margin: 0; }
       </div>
       <div class="p-8 text-center">
        <h2 class="font-heading font-bold text-2xl mb-3">Templos Japoneses</h2>
-       <p class="text-gray-600">Os templos no Japão são lugares muito importantes para a cultura e a religião do país. Existem templos budistas e santuários xintoístas, sendo estes últimos ligados à tradição do Shinto. Muitos santuários são facilmente reconhecidos pelos portões vermelhos chamados torii, que marcam a entrada para um espaço sagrado. Estes locais são usados para orações, pedidos de sorte e proteção, mas também são espaços de paz e reflexão. Além do lado religioso, os templos fazem parte da identidade cultural japonesa e são muito visitados por turistas devido à sua beleza e ambiente tranquilo.</p>
+       <p class="text-gray-600">Os templos no Japão são lugares muito importantes para a cultura e a religião do país. Existem templos budistas e santuários xintoístas, sendo estes últimos[...]
       </div>
      </div>
      <!-- Sakura -->
@@ -241,7 +242,7 @@ html, body { height: 100%; margin: 0; }
       </div>
       <div class="p-8 text-center">
        <h2 class="font-heading font-bold text-2xl mb-3">Sakura</h2>
-       <p class="text-gray-600">As sakuras são as flores de cerejeira do Japão e simbolizam a beleza, a renovação e a natureza passageira da vida. Todos os anos, na primavera, as árvores ficam cobertas por flores cor-de-rosa e brancas, criando paisagens incríveis.</p>
+       <p class="text-gray-600">As sakuras são as flores de cerejeira do Japão e simbolizam a beleza, a renovação e a natureza passageira da vida. Todos os anos, na primavera, as árvores fic[...]
       </div>
      </div>
      <!-- Cultura Automóvel Japonesa -->
@@ -258,7 +259,7 @@ html, body { height: 100%; margin: 0; }
        </div>
       </div>
       <div class="px-8 pb-8">
-       <p class="text-gray-600">A cultura automóvel japonesa é conhecida pela sua enorme paixão pela velocidade, pela personalização e pela ligação entre o condutor e o carro. No Japão, os automóveis não são apenas um meio de transporte — representam também estilo, identidade e dedicação à engenharia. Modelos como o Toyota Supra, o Nissan Skyline GT-R e o Mazda RX-7 tornaram-se ícones mundiais graças ao seu desempenho e potencial de modificação. O drift é uma das partes mais famosas desta cultura, especialmente nas estradas de montanha japonesas, onde muitos pilotos aperfeiçoavam a técnica de deslizar nas curvas. Esta tradição ganhou ainda mais popularidade através do anime Initial D e de vários videojogos de corridas. Atualmente, a cultura JDM continua a influenciar fãs de automóveis em todo o mundo, combinando inovação tecnológica, estética única e uma forte paixão pela condução.</p>
+       <p class="text-gray-600">A cultura automóvel japonesa é conhecida pela sua enorme paixão pela velocidade, pela personalização e pela ligação entre o condutor e o carro. No Japão, o[...]
       </div>
      </div>
     </div>
@@ -274,7 +275,7 @@ html, body { height: 100%; margin: 0; }
      <div class="bg-white rounded-2xl shadow-lg overflow-hidden mb-12 card-hover p-8">
       <div class="text-center mb-6">
        <div class="section-divider mx-auto mb-6"></div>
-       <p class="text-lg text-gray-700 leading-relaxed">O Japão é um dos países mais associados à inovação tecnológica no mundo. A tecnologia japonesa combina engenharia de precisão, automatização, eficiência e uma forte cultura de investigação e desenvolvimento.</p>
+       <p class="text-lg text-gray-700 leading-relaxed">O Japão é um dos países mais associados à inovação tecnológica no mundo. A tecnologia japonesa combina engenharia de precisão, auto[...]
       </div>
      </div>
 
@@ -284,9 +285,9 @@ html, body { height: 100%; margin: 0; }
        <h2 class="font-heading font-bold text-2xl mb-6 text-red-600">🤖 Robótica e Automação</h2>
       </div>
       <div class="px-8 pb-4">
-       <p class="text-gray-600 mb-6">O Japão é líder mundial em robôs industriais e humanoides. Empresas como Toyota, Honda e FANUC desenvolveram robôs usados em fábricas, hospitais e até assistência a idosos. Um exemplo famoso é o robô humanoide ASIMO, criado pela Honda, capaz de caminhar, subir escadas e reconhecer pessoas.</p>
+       <p class="text-gray-600 mb-6">O Japão é líder mundial em robôs industriais e humanoides. Empresas como Toyota, Honda e FANUC desenvolveram robôs usados em fábricas, hospitais e até [...]
        <div class="img-placeholder h-56 rounded-lg bg-gradient-to-br from-red-100 to-orange-200 mb-6">
-        <img src="https://images.openai.com/static-rsc-4/hvR1bPRmc9Uuqgx8U-_IK__9MP-ttQFf9EPnayH4uNC2Oljz_9CmK2EVFzTtY_s5hpqt-VXvPZOOUCSFmtuJXJxsHYgDh4kRURiyIITCemLZP_RtLEcTBtAELM1FEYLVhSBXxR0NxcjB1Wfqh45bEGOb-05OvFwduivppKNEDKpcfk4e0WmzGd2pJELIuFMy?purpose=fullsize" alt="Robótica Japonesa" style="width:100%;height:100%;object-fit:cover;">
+        <img src="https://images.openai.com/static-rsc-4/hvR1bPRmc9Uuqgx8U-_IK__9MP-ttQFf9EPnayH4uNC2Oljz_9CmK2EVFzTtY_s5hpqt-VXvPZOOUCSFmtuJXJxsHYgDh4kRURiyIITCemLZP_RtLEcTBtAELM1FEYLVhSBXxR0Nxc[...]
        </div>
       </div>
      </div>
@@ -297,9 +298,9 @@ html, body { height: 100%; margin: 0; }
        <h2 class="font-heading font-bold text-2xl mb-6 text-green-600">🚅 Comboios de Alta Velocidade</h2>
       </div>
       <div class="px-8 pb-4">
-       <p class="text-gray-600 mb-6">O Shinkansen, conhecido como "Trem-bala", é famoso pela velocidade, pontualidade e segurança. Alguns modelos ultrapassam os 300 km/h e os atrasos médios são extremamente baixos.</p>
+       <p class="text-gray-600 mb-6">O Shinkansen, conhecido como "Trem-bala", é famoso pela velocidade, pontualidade e segurança. Alguns modelos ultrapassam os 300 km/h e os atrasos médios s[...]
        <div class="img-placeholder h-56 rounded-lg bg-gradient-to-br from-green-100 to-cyan-200 mb-6">
-        <img src="https://images.openai.com/static-rsc-4/7E9UktaQ7OnaTw8C2DJJw1V94sIK-1GjLPaBgiFw24rmSJLNUcf3zQe0p6ihVwWfhFDEV7CfW-S53sqpTEAqvgKLYI5Bzx9-ARqxVQWmKWlG4ouxgATLZp56fyO3oqp_D4AAPW_LjzYPUmD6vEmj4zZ6vprtylccwzDZTrJvYKqXpTt02q4K3e4T50ieoUr8?purpose=inline" alt="Shinkansen Trem-bala" style="width:100%;height:100%;object-fit:cover;">
+        <img src="https://images.openai.com/static-rsc-4/7E9UktaQ7OnaTw8C2DJJw1V94sIK-1GjLPaBgiFw24rmSJLNUcf3zQe0p6ihVwWfhFDEV7CfW-S53sqpTEAqvgKLYI5Bzx9-ARqxVQWmKWlG4ouxgATLZp56fyO3oqp_D4AAPW_Ljz[...]
        </div>
       </div>
      </div>
@@ -330,9 +331,71 @@ html, body { height: 100%; margin: 0; }
          <img src="https://www.bing.com/th/id/OIP.d5j53ZhWESll7bamU97q8QAAAA?w=188&h=188&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Nintendo Gaming" style="width:100%;height:100%;object-fit:cover;">
         </div>
         <div class="img-placeholder h-56 rounded-lg bg-gradient-to-br from-purple-100 to-pink-200">
-         <img src="https://images.openai.com/static-rsc-4/S0H0TPhdKimIb6RxVjxMXPhGjJusIYfwC2RF6OCdT7oTNypqxR6AJYFlhQUMhHqNrIbgVzUH49loMHeuno0cxQJZF65krIfP8AriQQryy6h4k2MH6VKYIduA4fVLTl3y1R4bmg4qhYBm3UtxP6mvvjTIE6yS3ROcZrk7izZmoGVoqtqxdnQLn_3ICe6Yir24?purpose=inline" alt="Sony PlayStation" style="width:100%;height:100%;object-fit:cover;">
+         <img src="https://images.openai.com/static-rsc-4/S0H0TPhdKimIb6RxVjxMXPhGjJusIYfwC2RF6OCdT7oTNypqxR6AJYFlhQUMhHqNrIbgVzUH49loMHeuno0cxQJZF65krIfP8AriQQryy6h4k2MH6VKYIduA4fVLTl3y1R4bmg4qh[...]
         </div>
        </div>
+      </div>
+     </div>
+
+     <!-- Inteligência Artificial e Cidades Inteligentes -->
+     <div class="bg-white rounded-2xl shadow-lg overflow-hidden mb-12 card-hover">
+      <div class="p-8 pb-4">
+       <h2 class="font-heading font-bold text-2xl mb-6 text-purple-600">🤖 Inteligência Artificial e Cidades Inteligentes</h2>
+      </div>
+      <div class="px-8 pb-4">
+       <p class="text-gray-600 font-semibold mb-4">Cidades japonesas investem fortemente em:</p>
+       <ul class="text-gray-600 mb-6 ml-4 space-y-2">
+        <li>• Sensores urbanos</li>
+        <li>• Pagamentos digitais</li>
+        <li>• Transportes inteligentes</li>
+        <li>• Eficiência energética</li>
+        <li>• Casas automatizadas</li>
+       </ul>
+       <p class="text-gray-600 mb-6">O conceito de "smart cities" tem crescido em cidades como Tóquio e Osaka.</p>
+
+       <h3 class="font-heading font-bold text-xl mb-4 text-gray-800">Tecnologia no Dia a Dia</h3>
+       <p class="text-gray-600 mb-4">O Japão também se destaca por tecnologias práticas utilizadas diariamente:</p>
+       <ul class="text-gray-600 mb-6 ml-4 space-y-2">
+        <li>• Sanitas inteligentes</li>
+        <li>• Máquinas automáticas de venda</li>
+        <li>• Hotéis automatizados</li>
+        <li>• Restaurantes com pedidos digitais</li>
+        <li>• Sistemas de transporte público altamente eficientes</li>
+       </ul>
+
+       <div class="grid md:grid-cols-2 gap-6 mb-6">
+        <div class="img-placeholder h-56 rounded-lg bg-gradient-to-br from-indigo-100 to-blue-200">
+         <img src="https://images.openai.com/static-rsc-4/eymMwdrFugzM9kGGCUnl-deZVqU5OVFZJxpXPz1Iu8HBYmI6NnqWVrHRDmrqSjKNsNUjq-rOsMbeELt5oJufq8Osf4EnVoPqJhfT-zMskq_J5i0slLZ48_T7a4xx7pR5lNdtq2KOV8MQ2PglMVr4hLEz2B7ZmeRL2TjceYMDuojV9h7Ev2b_qM8IJuGSN4P2?purpose=fullsize" alt="Cidades Inteligentes 1" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="img-placeholder h-56 rounded-lg bg-gradient-to-br from-cyan-100 to-teal-200">
+         <img src="https://images.openai.com/static-rsc-4/7HBR0Z1X6ac3mrSniDtaQp0E9TylKn6y_V9zz27CdUeLm2pSO6dClFFb0PUpyyUAimvg4YGfdwjKIRQ9TdMaHwDBGbqkWqeNgNxOfbdkrXedlqpZ6b9zt4JVUpL0UnQZtCj0pSIWCNuLkosxqoroVkseAxmvb2aLZUu-Z4gY0pPUu3Rt67sMS3NsA0D863dS?purpose=fullsize" alt="Cidades Inteligentes 2" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+       </div>
+
+       <div class="grid md:grid-cols-2 gap-6 mb-6">
+        <div class="img-placeholder h-56 rounded-lg bg-gradient-to-br from-green-100 to-emerald-200">
+         <img src="https://images.openai.com/static-rsc-4/9DpWiHpatvoNofIVA-AcD94gY70f7XaZC_MIdXskmJHX8FiAANIIKVl5WXMFfR1uS-ITSltxmKbM-yqR0B7VEXuXtUw10ryEj8HX973OqcOytD7-V3nyIkF1rfDzxAYIBw7PE6noNbd7UoyvRok34Hwgp3PGHdc4tuiXN-2B0s7muRQ7Ox54tG_UHgboehiq?purpose=fullsize" alt="Cidades Inteligentes 3" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="img-placeholder h-56 rounded-lg bg-gradient-to-br from-yellow-100 to-orange-200">
+         <img src="https://images.openai.com/static-rsc-4/8DHnE9RLI9xpVHG1v0Y49-eOtxpHxhIOQI76Vgi4uIkCoXe2nsV5KeSHzG8IeFw5jULO6jOl9X0A89DhFHnJJUnG1tqqIBBOFv1c0sg3pGrbcsidJIA0D9Dq4-AxOZ0BUmkmtgsmQF6CINnwRmMIXjKtXxNQQ1IieNoskDhRfDcc3MrXq-RyiMOo_OMImNol?purpose=fullsize" alt="Cidades Inteligentes 4" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+       </div>
+      </div>
+     </div>
+
+     <!-- Desafios Atuais -->
+     <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+      <div class="p-8 pb-4">
+       <h2 class="font-heading font-bold text-2xl mb-6 text-orange-600">⚠️ Desafios Atuais</h2>
+      </div>
+      <div class="px-8 pb-8">
+       <p class="text-gray-600 mb-4">Apesar da reputação tecnológica, o Japão enfrenta alguns desafios:</p>
+       <ul class="text-gray-600 mb-6 ml-4 space-y-2">
+        <li>• Envelhecimento da população</li>
+        <li>• Concorrência de empresas da China e da Coreia do Sul</li>
+        <li>• Adaptação mais lenta em alguns serviços digitais</li>
+       </ul>
+       <p class="text-gray-600">Mesmo assim, continua a ser uma das maiores potências tecnológicas do mundo, especialmente nas áreas da robótica, engenharia de precisão e transportes avançados.</p>
       </div>
      </div>
     </div>
@@ -346,7 +409,7 @@ html, body { height: 100%; margin: 0; }
     <div class="max-w-4xl mx-auto px-4 py-12">
      <div class="bg-white rounded-2xl shadow-md p-8 md:p-12 mb-10 text-center">
       <div class="section-divider mx-auto mb-6"></div>
-      <p class="text-lg text-gray-700 leading-relaxed mb-8">O Japão é um país cheio de cultura, tradição e modernidade. Este trabalho permitiu conhecer melhor as cidades, a gastronomia e os monumentos deste fascinante país asiático.</p>
+      <p class="text-lg text-gray-700 leading-relaxed mb-8">O Japão é um país cheio de cultura, tradição e modernidade. Este trabalho permitiu conhecer melhor as cidades, a gastronomia e os [...]
       <div class="img-placeholder h-64 rounded-xl bg-gradient-to-br from-orange-100 via-pink-100 to-purple-100 mb-8">
        <img src="https://i.ibb.co/5W0SPtKV/por-do-sol.png" alt="Paisagem japonesa ao pôr do sol" style="width:100%;height:100%;object-fit:cover;">
       </div>
@@ -363,6 +426,10 @@ html, body { height: 100%; margin: 0; }
        <a href="https://media.tacdn.com/media/attractions-splice-spp-674x446/12/6d/dd/6c.jpg" target="_blank" class="link-button">🚗 Imagem - JDM 1</a>
        <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI6Catw5CuJ94gNltHDTc_6iNHs3LXlmQvag&s" target="_blank" class="link-button">🏎️ Imagem - JDM 2</a>
        <a href="https://i.ibb.co/5W0SPtKV/por-do-sol.png" target="_blank" class="link-button">🌅 Imagem - Pôr do Sol</a>
+       <a href="https://images.openai.com/static-rsc-4/eymMwdrFugzM9kGGCUnl-deZVqU5OVFZJxpXPz1Iu8HBYmI6NnqWVrHRDmrqSjKNsNUjq-rOsMbeELt5oJufq8Osf4EnVoPqJhfT-zMskq_J5i0slLZ48_T7a4xx7pR5lNdtq2KOV8MQ2PglMVr4hLEz2B7ZmeRL2TjceYMDuojV9h7Ev2b_qM8IJuGSN4P2?purpose=fullsize" target="_blank" class="link-button">🏙️ Imagem - Smart City 1</a>
+       <a href="https://images.openai.com/static-rsc-4/7HBR0Z1X6ac3mrSniDtaQp0E9TylKn6y_V9zz27CdUeLm2pSO6dClFFb0PUpyyUAimvg4YGfdwjKIRQ9TdMaHwDBGbqkWqeNgNxOfbdkrXedlqpZ6b9zt4JVUpL0UnQZtCj0pSIWCNuLkosxqoroVkseAxmvb2aLZUu-Z4gY0pPUu3Rt67sMS3NsA0D863dS?purpose=fullsize" target="_blank" class="link-button">🏙️ Imagem - Smart City 2</a>
+       <a href="https://images.openai.com/static-rsc-4/9DpWiHpatvoNofIVA-AcD94gY70f7XaZC_MIdXskmJHX8FiAANIIKVl5WXMFfR1uS-ITSltxmKbM-yqR0B7VEXuXtUw10ryEj8HX973OqcOytD7-V3nyIkF1rfDzxAYIBw7PE6noNbd7UoyvRok34Hwgp3PGHdc4tuiXN-2B0s7muRQ7Ox54tG_UHgboehiq?purpose=fullsize" target="_blank" class="link-button">🏙️ Imagem - Smart City 3</a>
+       <a href="https://images.openai.com/static-rsc-4/8DHnE9RLI9xpVHG1v0Y49-eOtxpHxhIOQI76Vgi4uIkCoXe2nsV5KeSHzG8IeFw5jULO6jOl9X0A89DhFHnJJUnG1tqqIBBOFv1c0sg3pGrbcsidJIA0D9Dq4-AxOZ0BUmkmtgsmQF6CINnwRmMIXjKtXxNQQ1IieNoskDhRfDcc3MrXq-RyiMOo_OMImNol?purpose=fullsize" target="_blank" class="link-button">🏙️ Imagem - Smart City 4</a>
       </div>
      </div>
     </div>
